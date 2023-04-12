@@ -1,0 +1,42 @@
+body{
+background: rgb(12, 86, 85);
+font-size: 16pt;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+header{
+    color: rgb(254, 254, 254);
+    text-align: center;
+
+}
+legend{
+    font-size: 14pt;
+    
+}
+fieldset{
+    border: solid;
+    border-radius: 10px;
+}
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgb(33, 32, 32);
+
+}
+
+select{
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input{
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+
+}

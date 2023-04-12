@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: rgb(76, 76, 179);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong></p>
+    <div id="msg">Clique aqui</div>
+
+    <script>
+        //criando variável
+       var p1 = window.document.getElementsByTagName('p')[1]
+
+       //usando variável p1
+       window.document.write('Está escrito assim: ' + p1.innerText)
+       p1.style.color = 'black'
+       p1.style.background = 'purple' 
+
+      document.write(p1.innerHTML)
+
+      //criando e usando variável d
+      var d = window.document.getElementById('msg')
+      d.style.color = 'yellow'
+
+      //criando e usando variável j
+
+      var j = window.document.querySelector('div#msg')
+      j.style.background = 'gray'
+    </script>
+</body>
+</html>

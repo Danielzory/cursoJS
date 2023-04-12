@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body{
+            background: rgb(162, 222, 98);
+            font: normal 18pt arial;
+            text-shadow: 2px 1px;
+        }
+
+        div#res{
+            border: double blue;
+            position: relative;
+            top: 10px;
+            height: 20px;
+            background-color: blue;
+            color: white;  
+            text-align: center;         
+        }
+        fieldset{
+            border-radius: 30px;
+            border-color: black;
+        }
+        input#button{
+            font-size: 15pt;
+            border: solid black;
+            size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Checando sua Nacionalidade</h1>
+    <div id="form">
+        <fieldset>
+        <legend>Nacionalidade</legend>
+        <label form="país">Você é natural de qual país?</label>
+        <input type="text" name="país" id="país">
+        <input id="button" type="button" value="Checar" onclick="checar()">
+    <div id="res"></div>
+            
+
+    <script>
+        function checar(){
+            var p = window.document.querySelector('input#país')
+            var res = window.document.querySelector('div#res')
+            var txt = String (p.value)
+            res.innerHTML = `Você vivem em ${txt},`
+            if (txt != 'Brasil') {
+                
+                res.innerHTML += ' é estrangeiro!'
+            }
+            else{
+                res.innerHTML += ' você é brasileiro!'
+            } 
+            
+        }
+    </script>
+
+
+
+
+
+    </fieldset>        
+    </div>
+    
+</body>
+</html>
